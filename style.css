@@ -169,7 +169,7 @@ body {
 
 #content img {
   position: absolute;
-  top: 150px;
+  top: 200px;
   width: 620px;
   height: 700px;
   right: 100px;
@@ -244,9 +244,10 @@ body {
 }
 
 .service {
+  width: 100%;
   position: relative;
   display: flex;
-  left: 30px;
+  /* left: 30px; */
   margin-top: 100px;
   align-items: center;
   text-align: center;
@@ -265,27 +266,66 @@ body {
   font-size: 20px;
 }
 #product {
-  display: flex;
   text-align: center;
-}
-.total {
-  width: 30%;
-  min-width: 200px;
-  padding: 20px 15px;
-  border: 1px solid #cce7d0;
-  background-color: #685f60;
-}
-.total img {
   width: 100%;
-  border-radius: 30px;
+  height: 200vh;
+
+  background-image: linear-gradient(#685f60, #3d3737);
 }
-.total h3 {
+#product h1 {
+  padding-top: 30px;
+  font-size: 60px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+/* .podmotlan {
+  background-color: rgb(80, 76, 76);
+  width: 100%;
+  height: 100vh;
+  display: flex;
   position: relative;
-  bottom: 10px;
+} */
+#product .total {
+  position: relative;
+  width: 13%;
+  height: 330px;
+  min-width: 100px;
+  padding: 10px 10px;
+  flex-wrap: wrap; /* border-radius: 60px; */
+  background-color: #afb3af;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+  transition: 0.2s ease;
 }
-.total h4 {
-  bottom: 10px;
+#product .total:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.4);
 }
-.total .infor {
-  padding: 1px;
+#product .total img {
+  min-width: 10px;
+  width: 90%;
+  border-radius: 30px;
+  padding-top: 10px 10px 10px 10px;
+}
+#product .total .infor {
+  text-align: start;
+  /* padding: 10px 0; */
+}
+.infor h4 {
+  position: absolute;
+  bottom: -20px;
+  left: 15px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.podmotlan {
+  display: flex;
+  padding-top: 90px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#product .total .cart-product {
+  position: absolute;
+  bottom: 11px;
+  right: 20px;
 }
